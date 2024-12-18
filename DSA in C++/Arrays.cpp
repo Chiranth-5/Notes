@@ -145,14 +145,14 @@ void _2DArray()
     return;
 }
 
-int main()
-{
-    // static1DArray();
-    // Dynamic1DArray();
+// int main()
+// {
+//     static1DArray();
+//     Dynamic1DArray();
 
-    _2DArray();
-    return 0;
+//     _2DArray();
+//     return 0;
     
-}
+// }
 
 
