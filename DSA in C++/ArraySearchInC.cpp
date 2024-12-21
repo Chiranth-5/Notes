@@ -160,27 +160,27 @@ struct Array * Union(struct Array *arr1, struct Array *arr2)
 
 
 
-int main()
-{
-    struct Array arr1 = { {1,2,3,4,5},10,5};
-    struct Array arr2 = { {2,7,8,9,10},10,5};
-    struct Array *arr3;
-    int n,i;
+// int main()
+// {
+//     struct Array arr1 = { {1,2,3,4,5},10,5};
+//     struct Array arr2 = { {2,7,8,9,10},10,5};
+//     struct Array *arr3;
+//     int n,i;
 
-    // printf("%d\n",LinearSearch(&arr , 1));
-    // Display(arr);
+//     // printf("%d\n",LinearSearch(&arr , 1));
+//     // Display(arr);
 
-    // printf("%d\n",BinarySearch( arr , 3));
-    // Display(arr);
+//     // printf("%d\n",BinarySearch( arr , 3));
+//     // Display(arr);
 
-    // Reverse(&arr1);
-    // Display(arr1);
+//     // Reverse(&arr1);
+//     // Display(arr1);
 
-    arr3 = Merge(&arr1, &arr2);
-    Display(*arr3);
+//     arr3 = Merge(&arr1, &arr2);
+//     Display(*arr3);
 
-    arr3 = Union(&arr1, &arr2);
-    Display(*arr3); 
+//     arr3 = Union(&arr1, &arr2);
+//     Display(*arr3); 
 
-}
+// }
     
