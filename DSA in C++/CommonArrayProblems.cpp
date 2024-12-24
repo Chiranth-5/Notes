@@ -86,15 +86,15 @@ void sumOfK(int *A)
 }
 
 
-int main()
-{
-    int A[10] ={1,2,3,4,4,8,9,10,11,12};
-    // missingElements(A);
-    // duplicates(A);
-    // duplicatesUsingHash(A);
-    // duplicatesUnsortedArray(A);
-    sumOfK(A);
+// int main()
+// {
+//     int A[10] ={1,2,3,4,4,8,9,10,11,12};
+//     // missingElements(A);
+//     // duplicates(A);
+//     // duplicatesUsingHash(A);
+//     // duplicatesUnsortedArray(A);
+//     sumOfK(A);
 
 
    
-}
+// }
