@@ -184,28 +184,57 @@ void isAnagram(char A[],char B[])
     }
 }
 
-int main()
+void perm(char D[], int k)
 {
-    // char A[4] ={'A','B','C','\0'};
-    // printf( "%s", A);
-    // std::cout << A << std::endl;
-    char C[] = "Chiranth is good";
-    char A[] = "medical";
-    char B[] = "decimal";
-    // printf( "%s\n", C);
-    // std::cout << C << std::endl;
-    // char B = 'B';
-    // printf( "%c", B);
-    // std::cout << B << std::endl;
+    static int A[10] ={0};
+    static char Res[10] ;
+    int i;
 
-    // length(C);
-    // changingCase(C);
-    // vowelsandConsonant(C);
-    // countingNumberOfWords(C);
-    // reverseingString2methods(C);
-    // comparingStrings();
-    // duplicatesInString();Using hastable of length 0-25
-    // duplicatesUsingBitWiseOperator(A);
-    isAnagram(A,B);
-    
+    if (D[k] == '\0')
+    {
+        Res[k] = '\0';
+        std::cout << Res << std::endl;
+    }
+    else
+    {
+        for(int i=0; D[i]!='\0'; i++)
+        {
+            if(A[i]==0)
+            {
+                Res[k] = D[i];
+                A[i]=1;
+                perm(D,k+1);
+                A[i]=0;
+            }
+        }
+    }
 }
+
+// int main()
+// {
+//     // char A[4] ={'A','B','C','\0'};
+//     // printf( "%s", A);
+//     // std::cout << A << std::endl;
+//     char C[] = "Chiranth is good";
+//     char A[] = "medical";
+//     char B[] = "decimal";
+//     char D[] = "ABC";
+//     int k=0;
+//     // printf( "%s\n", C);
+//     // std::cout << C << std::endl;
+//     // char B = 'B';
+//     // printf( "%c", B);
+//     // std::cout << B << std::endl;
+
+//     // length(C);
+//     // changingCase(C);
+//     // vowelsandConsonant(C);
+//     // countingNumberOfWords(C);
+//     // reverseingString2methods(C);
+//     // comparingStrings();
+//     // duplicatesInString();Using hastable of length 0-25
+//     // duplicatesUsingBitWiseOperator(A);
+//     // isAnagram(A,B);
+//     perm(D,k);
+    
+// }
