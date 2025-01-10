@@ -257,11 +257,46 @@ void removeDupicatesInSorted(struct Node *p)
 
 }
 
+void reversingLLElements(struct Node *p)
+{
+    int A[10];
+    int i = 0;
+
+    while(p != NULL)
+    {
+        A[i] = p->data;
+        p = p->next;
+        i++;
+    }
+    i = i-1;
+    p = first;
+    while(p != NULL)
+    {
+        p->data = A[i];
+        p = p->next;
+        i--;
+    }
+}
+
+void reversingLLLinks(struct Node *q)
+{
+    struct Node *p = NULL , *r = NULL ;
+
+    while (q != NULL)
+    {
+        r = p;
+        p = q;
+        q = q->next;
+        p->next = r;
+    }
+    first = p;
+}
+
 
 int main()
 {
     struct Node *temp;
-    int A[] = {3, 5, 5, 5, 5};
+    int A[] = {3, 5, 6, 8, 10};
     create(A, 5);
 
     // Display(first);
@@ -307,9 +342,18 @@ int main()
     // Display(first);
     // std::cout << std::endl;
 
-    removeDupicatesInSorted(first);
+    // removeDupicatesInSorted(first);
+    // Display(first);
+    // std::cout << std::endl;
+
+    // reversingLLElements(first);
+    // Display(first);
+    // std::cout << std::endl;
+
+    reversingLLLinks(first);
     Display(first);
     std::cout << std::endl;
+
 
     return 0;
 
