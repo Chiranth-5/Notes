@@ -218,11 +218,50 @@ int deletee(int key)
 
 }
 
+void checkSorted(struct Node *p)
+{
+    int x = INT32_MIN;
+
+    while (p != NULL)
+    {
+        if (x > p->data)
+        {
+            std::cout << "Not Sorted" << std::endl;
+            return;
+        }
+        x = p->data;
+        p = p->next;
+    }
+    std::cout << "Sorted" << std::endl;
+    return;
+}
+
+void removeDupicatesInSorted(struct Node *p)
+{
+    struct Node *q;
+    q = p->next; 
+    while (q != NULL)
+    {
+        if ( p->data != q->data)
+        {
+            p = q;
+            q = q->next;        
+        }
+        else
+        {
+            p->next = q->next;
+            delete q;
+            q = p->next;
+        }
+    }
+
+}
+
 
 int main()
 {
     struct Node *temp;
-    int A[] = {3, 5, 7, 10, 25};
+    int A[] = {3, 5, 5, 5, 5};
     create(A, 5);
 
     // Display(first);
@@ -260,10 +299,18 @@ int main()
 
     Display(first);
     std::cout << std::endl;
-    std::cout << deletee(88)<< std::endl;
-    std::cout << std::endl;
+    // std::cout << deletee(88)<< std::endl;
+    // std::cout << std::endl;
+    // Display(first);
+
+    // checkSorted(first);
+    // Display(first);
+    // std::cout << std::endl;
+
+    removeDupicatesInSorted(first);
     Display(first);
+    std::cout << std::endl;
 
     return 0;
 
-}
+} 
