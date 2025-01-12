@@ -2,20 +2,27 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/chiranthajjamane/Desktop/Cu Denver/Github Push Notes/DSA in C++/LinkedList'
 relocations:
-  - { offset: 0x514D, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x176D2, symBinAddr: 0x100008000, symSize: 0x0 }
-  - { offset: 0x518D, size: 0x8, addend: 0x0, symName: _first, symObjAddr: 0x176D8, symBinAddr: 0x100008008, symSize: 0x0 }
-  - { offset: 0x52EF, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x81C, symBinAddr: 0x100003AC8, symSize: 0x94 }
-  - { offset: 0x5337, size: 0x8, addend: 0x0, symName: __Z23removeDupicatesInSortedP4Node, symObjAddr: 0x728, symBinAddr: 0x1000039D4, symSize: 0xF4 }
-  - { offset: 0x5374, size: 0x8, addend: 0x0, symName: __Z11checkSortedP4Node, symObjAddr: 0x688, symBinAddr: 0x100003934, symSize: 0xA0 }
-  - { offset: 0x53B5, size: 0x8, addend: 0x0, symName: __Z7deleteei, symObjAddr: 0x584, symBinAddr: 0x100003830, symSize: 0x104 }
-  - { offset: 0x5410, size: 0x8, addend: 0x0, symName: __Z16insertInSortedLLi, symObjAddr: 0x4AC, symBinAddr: 0x100003758, symSize: 0xD8 }
-  - { offset: 0x546B, size: 0x8, addend: 0x0, symName: __Z6insertii, symObjAddr: 0x3B8, symBinAddr: 0x100003664, symSize: 0xF4 }
-  - { offset: 0x54EB, size: 0x8, addend: 0x0, symName: __Z9impSearchP4Nodei, symObjAddr: 0x2FC, symBinAddr: 0x1000035A8, symSize: 0xBC }
-  - { offset: 0x553B, size: 0x8, addend: 0x0, symName: __Z6searchP4Nodei, symObjAddr: 0x268, symBinAddr: 0x100003514, symSize: 0x94 }
-  - { offset: 0x557C, size: 0x8, addend: 0x0, symName: __Z3maxP4Node, symObjAddr: 0x210, symBinAddr: 0x1000034BC, symSize: 0x58 }
-  - { offset: 0x55BD, size: 0x8, addend: 0x0, symName: __Z3sumP4Node, symObjAddr: 0x1C8, symBinAddr: 0x100003474, symSize: 0x48 }
-  - { offset: 0x55FE, size: 0x8, addend: 0x0, symName: __Z5countP4Node, symObjAddr: 0x188, symBinAddr: 0x100003434, symSize: 0x40 }
-  - { offset: 0x563B, size: 0x8, addend: 0x0, symName: __Z8RDisplayP4Node, symObjAddr: 0x138, symBinAddr: 0x1000033E4, symSize: 0x50 }
-  - { offset: 0x5669, size: 0x8, addend: 0x0, symName: __Z7DisplayP4Node, symObjAddr: 0xDC, symBinAddr: 0x100003388, symSize: 0x5C }
-  - { offset: 0x5697, size: 0x8, addend: 0x0, symName: __Z6createPii, symObjAddr: 0x0, symBinAddr: 0x1000032AC, symSize: 0xDC }
+  - { offset: 0x514D, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x180AA, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offset: 0x518D, size: 0x8, addend: 0x0, symName: _first, symObjAddr: 0x180B0, symBinAddr: 0x100008008, symSize: 0x0 }
+  - { offset: 0x51A3, size: 0x8, addend: 0x0, symName: _second, symObjAddr: 0x180B8, symBinAddr: 0x100008010, symSize: 0x0 }
+  - { offset: 0x51B9, size: 0x8, addend: 0x0, symName: _third, symObjAddr: 0x180C0, symBinAddr: 0x100008018, symSize: 0x0 }
+  - { offset: 0x531B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xB6C, symBinAddr: 0x10000397C, symSize: 0xF0 }
+  - { offset: 0x5387, size: 0x8, addend: 0x0, symName: __Z8merge2LLP4NodeS0_, symObjAddr: 0xA08, symBinAddr: 0x100003818, symSize: 0x164 }
+  - { offset: 0x53DB, size: 0x8, addend: 0x0, symName: __Z16concatinating2LLP4NodeS0_, symObjAddr: 0x9B8, symBinAddr: 0x1000037C8, symSize: 0x50 }
+  - { offset: 0x541B, size: 0x8, addend: 0x0, symName: __Z16reversingLLLinksP4Node, symObjAddr: 0x954, symBinAddr: 0x100003764, symSize: 0x64 }
+  - { offset: 0x546B, size: 0x8, addend: 0x0, symName: __Z19reversingLLElementsP4Node, symObjAddr: 0x89C, symBinAddr: 0x1000036AC, symSize: 0xB8 }
+  - { offset: 0x54C7, size: 0x8, addend: 0x0, symName: __Z23removeDupicatesInSortedP4Node, symObjAddr: 0x804, symBinAddr: 0x100003614, symSize: 0x98 }
+  - { offset: 0x5506, size: 0x8, addend: 0x0, symName: __Z11checkSortedP4Node, symObjAddr: 0x764, symBinAddr: 0x100003574, symSize: 0xA0 }
+  - { offset: 0x5547, size: 0x8, addend: 0x0, symName: __Z7deleteei, symObjAddr: 0x660, symBinAddr: 0x100003470, symSize: 0x104 }
+  - { offset: 0x55A2, size: 0x8, addend: 0x0, symName: __Z16insertInSortedLLi, symObjAddr: 0x588, symBinAddr: 0x100003398, symSize: 0xD8 }
+  - { offset: 0x55FD, size: 0x8, addend: 0x0, symName: __Z6insertii, symObjAddr: 0x494, symBinAddr: 0x1000032A4, symSize: 0xF4 }
+  - { offset: 0x567D, size: 0x8, addend: 0x0, symName: __Z9impSearchP4Nodei, symObjAddr: 0x3D8, symBinAddr: 0x1000031E8, symSize: 0xBC }
+  - { offset: 0x56CD, size: 0x8, addend: 0x0, symName: __Z6searchP4Nodei, symObjAddr: 0x344, symBinAddr: 0x100003154, symSize: 0x94 }
+  - { offset: 0x570E, size: 0x8, addend: 0x0, symName: __Z3maxP4Node, symObjAddr: 0x2EC, symBinAddr: 0x1000030FC, symSize: 0x58 }
+  - { offset: 0x574F, size: 0x8, addend: 0x0, symName: __Z3sumP4Node, symObjAddr: 0x2A4, symBinAddr: 0x1000030B4, symSize: 0x48 }
+  - { offset: 0x5790, size: 0x8, addend: 0x0, symName: __Z5countP4Node, symObjAddr: 0x264, symBinAddr: 0x100003074, symSize: 0x40 }
+  - { offset: 0x57CD, size: 0x8, addend: 0x0, symName: __Z8RDisplayP4Node, symObjAddr: 0x214, symBinAddr: 0x100003024, symSize: 0x50 }
+  - { offset: 0x57FB, size: 0x8, addend: 0x0, symName: __Z7DisplayP4Node, symObjAddr: 0x1B8, symBinAddr: 0x100002FC8, symSize: 0x5C }
+  - { offset: 0x5829, size: 0x8, addend: 0x0, symName: __Z7createSPii, symObjAddr: 0xDC, symBinAddr: 0x100002EEC, symSize: 0xDC }
+  - { offset: 0x5899, size: 0x8, addend: 0x0, symName: __Z7createFPii, symObjAddr: 0x0, symBinAddr: 0x100002E10, symSize: 0xDC }
 ...

@@ -4,9 +4,9 @@ struct Node
 {
     int data;
     struct Node *next;
-} *first = NULL;
+} *first = NULL , *second = NULL , *third = NULL;
 
-void create(int A[], int n)
+void createF(int A[], int n)
 {
     int i;
     struct Node *t, *last;
@@ -14,6 +14,24 @@ void create(int A[], int n)
     first->data = A[0];
     first->next = NULL;
     last = first;
+    for (i = 1; i < n; i++)
+    {
+        t = new struct Node;
+        t->data = A[i];
+        t->next = NULL;
+        last->next = t;
+        last = t;
+    }
+}
+
+void createS(int A[], int n)
+{
+    int i;
+    struct Node *t, *last;
+    second = new struct Node;
+    second->data = A[0];
+    second->next = NULL;
+    last = second;
     for (i = 1; i < n; i++)
     {
         t = new struct Node;
@@ -292,12 +310,73 @@ void reversingLLLinks(struct Node *q)
     first = p;
 }
 
+struct Node* concatinating2LL(struct Node *p,struct Node *q)
+{
+    while(p->next != NULL)
+    {
+        p = p->next;
+    }
+    p->next = q;
+    q = NULL;
+    return (first);
+}
+
+struct Node* merge2LL(struct Node *p,struct Node *q)
+{
+    struct Node* last = NULL;
+    third = NULL;
+    if( p->data <= q->data)
+    {
+        third = last = p;
+        p = p->next;
+        last->next = NULL;
+        
+    }
+    else
+    {
+        third = last = q;
+        q = q->next;
+        last->next = NULL;
+        
+    }
+    
+    while(p != NULL && q != NULL )
+    {
+        if ( p->data <= q->data)
+        {
+            last->next = p;
+            p = p->next;
+            last = last->next;
+            last->next = NULL;
+        }
+        else
+        {
+            last->next = q;
+            q = q->next;
+            last = last->next;
+            last->next = NULL;
+        }
+    }
+
+    if( p == NULL)
+    {
+        last->next = q;
+        q = NULL;
+    }
+    else
+    {
+        last->next = p;
+        p = NULL;
+    }
+
+    return (third);
+}
+
 
 int main()
 {
-    struct Node *temp;
-    int A[] = {3, 5, 6, 8, 10};
-    create(A, 5);
+    // struct Node *temp;
+   
 
     // Display(first);
     // std::cout << std::endl;
@@ -332,8 +411,8 @@ int main()
     // std::cout << std::endl;
     // Display(first);
 
-    Display(first);
-    std::cout << std::endl;
+    // Display(first);
+    // std::cout << std::endl;
     // std::cout << deletee(88)<< std::endl;
     // std::cout << std::endl;
     // Display(first);
@@ -350,9 +429,30 @@ int main()
     // Display(first);
     // std::cout << std::endl;
 
-    reversingLLLinks(first);
+    // reversingLLLinks(first);
+    // Display(first);
+    // std::cout << std::endl;
+
+    int A[] = {3, 5, 6, 8, 10};
+    int B[] = {2, 4, 5, 8, 11, 18};
+    createF(A, 5);
+    createS(B, 6);
+
+    struct Node *temp;
+
     Display(first);
     std::cout << std::endl;
+    Display(second);
+    std::cout << std::endl;
+
+    // temp = concatinating2LL(first,second);
+    // Display(temp);
+    // std::cout << std::endl;
+
+    temp = merge2LL(first,second);
+    Display(temp);
+    std::cout << std::endl;
+
 
 
     return 0;
