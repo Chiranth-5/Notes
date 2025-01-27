@@ -129,33 +129,33 @@ void reversingDDL(struct Node *p)
     }
 }
 
-int main()
-{
-    int A[] ={2,3,4,5,6,7};
-    createFirst(A,6);
-    DisplayDDL(f);
-    std::cout<<std::endl;
-    // insertDDL(6,1);
-    // DisplayDDL(f);
-    // std::cout<<std::endl;
+// int main()
+// {
+//     int A[] ={2,3,4,5,6,7};
+//     createFirst(A,6);
+//     DisplayDDL(f);
+//     std::cout<<std::endl;
+//     // insertDDL(6,1);
+//     // DisplayDDL(f);
+//     // std::cout<<std::endl;
 
-    // int count = countDLL(f);
-    // std::cout << std::endl;
-    // std::cout << count << std::endl;
-    // int deletednumber = 0;
-    // if(count)
-    // {
-    //     deletednumber = deleteDLL(3);
-    //     std::cout << deletednumber << std::endl;
-    //     std::cout << std::endl;
+//     // int count = countDLL(f);
+//     // std::cout << std::endl;
+//     // std::cout << count << std::endl;
+//     // int deletednumber = 0;
+//     // if(count)
+//     // {
+//     //     deletednumber = deleteDLL(3);
+//     //     std::cout << deletednumber << std::endl;
+//     //     std::cout << std::endl;
 
-    //     DisplayDDL(f);
-    // }
+//     //     DisplayDDL(f);
+//     // }
 
-    reversingDDL(f);
-    std::cout<<std::endl;
-    DisplayDDL(f);
-    std::cout<<std::endl;
+//     reversingDDL(f);
+//     std::cout<<std::endl;
+//     DisplayDDL(f);
+//     std::cout<<std::endl;
 
-}
+// }
 

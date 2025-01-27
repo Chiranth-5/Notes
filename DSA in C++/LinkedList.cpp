@@ -500,6 +500,20 @@ int cDeletee( int pos)
     }
 }
 
+void findMiddle(struct Node *p)
+{
+    int b[20];
+    int i = 0;
+    for (i=0; p!=NULL ; i++ )
+    {
+        b[i] = p->data;
+        p = p->next;
+    }
+    
+    std::cout << b[i/2] << std::endl;
+
+}
+
 
 // int main()
 // {
@@ -566,7 +580,7 @@ int cDeletee( int pos)
 //     createF(A, 5);
 //     // createS(B, 6);
 
-//     struct Node *temp;
+//     // struct Node *temp;
 
 //     // Display(first);
 //     // std::cout << std::endl;
@@ -582,15 +596,15 @@ int cDeletee( int pos)
 //     // std::cout << std::endl;
 
 //     // t1 = first->next->next;
-//     temp = first->next->next->next->next;
+//     // temp = first->next->next->next->next;
 
-//     temp->next = first;
+//     // temp->next = first;
 
-//     int a = isLoop(first);
-//     std::cout << " Loop will have return value as 0 ,if its not a loop it will have return value as 1 : " << a << std::endl;
+//     // int a = isLoop(first);
+//     // std::cout << " Loop will have return value as 0 ,if its not a loop it will have return value as 1 : " << a << std::endl;
 
-//     cDisplay(first);
-//     std::cout << std::endl;
+//     // cDisplay(first);
+//     // std::cout << std::endl;
 //     // rCDisplay(first);
 //     // std::cout << std::endl;
 
@@ -602,16 +616,20 @@ int cDeletee( int pos)
 //     // cDisplay(first);
 //     // std::cout << std::endl;
 
-//     int b = cDeletee(2);
-//     std::cout << b << std::endl;
-//     std::cout << std::endl;
-
-//     a = isLoop(first);
-//     std::cout << " Loop will have return value as 0 ,if its not a loop it will have return value as 1 : " << a << std::endl;
-
-//     cDisplay(first);
+//     // int b = cDeletee(2);
+//     // std::cout << b << std::endl;
 //     // std::cout << std::endl;
 
+//     // a = isLoop(first);
+//     // std::cout << " Loop will have return value as 0 ,if its not a loop it will have return value as 1 : " << a << std::endl;
+
+//     // cDisplay(first);
+//     // // std::cout << std::endl;
+
+//     Display(first);
+//     std::cout << std::endl;
+
+//     findMiddle(first);
 
 
 //     return 0;
