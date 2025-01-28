@@ -91,21 +91,21 @@ int Stack::peek (int pos)
     return x;
 }
 
-int main()
-{
-    int x = 0 ;
-    Stack st;
-    st.push(1);
-    st.push(2);
-    st.push(3);
-    std::cout << std::endl;
-    st.display(st.getTop());
-    std::cout << std::endl;
-    x = st.pop();
-    std::cout <<x<< std::endl;
-    st.display(st.getTop());
-    std::cout << std::endl;
-    x = st.peek(1);
-    std::cout <<x<< std::endl;
+// int main()
+// {
+//     int x = 0 ;
+//     Stack st;
+//     st.push(1);
+//     st.push(2);
+//     st.push(3);
+//     std::cout << std::endl;
+//     st.display(st.getTop());
+//     std::cout << std::endl;
+//     x = st.pop();
+//     std::cout <<x<< std::endl;
+//     st.display(st.getTop());
+//     std::cout << std::endl;
+//     x = st.peek(1);
+//     std::cout <<x<< std::endl;
 
-}
+// }

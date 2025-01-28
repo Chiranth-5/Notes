@@ -5,21 +5,22 @@
 // arrow is eqaul to (*st).
 
 #include <iostream>
+#include <cstring>
 
 struct Stack
 {
     int size;
     int top;
-    int *s;
+    char *s;
 };
 
-void create(struct Stack *st)
-{
-    std::cout << "Enter the size of the stack" << std::endl;
-    std::cin >> st->size;
-    st->top = -1;
-    st->s = new int[st->size];
-}
+// void create(struct Stack *st)
+// {
+//     std::cout << "Enter the size of the stack" << std::endl;
+//     std::cin >> st->size;
+//     st->top = -1;
+//     st->s = new [st->size];
+// }
 
 void display(struct Stack st)
 {
@@ -37,7 +38,7 @@ void display(struct Stack st)
     }
 }
 
-void push(struct Stack *st ,int x)
+void push(struct Stack *st ,char x)
 {
     if(st->top == st->size-1)
     {
@@ -51,9 +52,9 @@ void push(struct Stack *st ,int x)
         return;
     }
 }
-int pop(struct Stack *st)
+char pop(struct Stack *st)
 {
-    int x = -1;
+    char x = -1;
     if(st->top == -1)
     {
         std::cout << "Stack Underflow" << std::endl;
@@ -110,21 +111,54 @@ bool isFull(struct Stack st)
     return false;
 }
 
-// int main()
-// {
-//     struct Stack st;
+bool isBalanced(char *exp)
+{   
+    struct Stack st;
+    st.size = strlen(exp);
+    st.top = -1;
+    st.s = new char[st.size];
+    for (int i = 0; exp[i] != '\0'; i++)
+    {
+        if ( exp[i] == '(')
+        {
+            push(&st,exp[i]);
+        }
+        else if( exp[i]==')')
+            {
+                if(isEmpty(st))
+                {
+                    return false;
+                }
+                else
+                {
+                    pop(&st);
+                }
+            }
+    }
+    return isEmpty(st);
+}
 
-//     create(&st);
-//     display(st);
-//     push(&st,1);
-//     push(&st,2);
-//     push(&st,3);
-//     push(&st,4);
-//     push(&st,5);
-//     display(st);
+int main()
+{
+    // struct Stack st;
 
-//     int x = peek(st,3);
-//     std::cout << std::endl;
-//     std::cout << x << std::endl;
+    // create(&st);
+    
+    // push(&st,1);
+    // push(&st,2);
+    // push(&st,3);
+    // push(&st,4);
+    // push(&st,5);
+    // display(st);
 
-// }
+    // int x = peek(st,3);
+    // std::cout << std::endl;
+    // std::cout << x << std::endl;
+
+
+    char *exp = "((a+b) * (c-d))";
+    bool A = isBalanced(exp);
+    std::cout << A << std::endl;
+
+
+}
