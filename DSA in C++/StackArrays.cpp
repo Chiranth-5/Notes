@@ -6,6 +6,8 @@
 
 #include <iostream>
 #include <cstring>
+#include <string>
+
 
 struct Stack
 {
@@ -54,7 +56,7 @@ void push(struct Stack *st ,char x)
 }
 char pop(struct Stack *st)
 {
-    char x = -1;
+    char x = '\0';
     if(st->top == -1)
     {
         std::cout << "Stack Underflow" << std::endl;
@@ -78,16 +80,16 @@ int peek(struct Stack st ,int pos)
     
 }
 
-int stackTop(struct Stack st)
+char stackTop(struct Stack st)
 {
-    int x = -1;
+    char x = '\0';
     if(st.top==-1)
     {
         std::cout << "Stack is Empty" << std::endl;
     }
     else
     {
-        x = st.top;
+        x = st.s[st.top];
     }
     return x;
 
@@ -138,6 +140,136 @@ bool isBalanced(char *exp)
     return isEmpty(st);
 }
 
+int isOperand(char x)
+{
+    if( x=='+' || x=='-' || x=='*' || x=='/' )
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+int pre(char c)
+{
+    if( c=='+' || c=='-')
+    {
+        return 1;
+    }
+    else if( c=='*' || c=='/')
+        {
+            return 2;
+        }
+        else
+        {
+            return 0;
+        }
+}
+
+char * convert (char *inFix)
+{
+    struct Stack st;
+    st.size = strlen(inFix);
+    st.top = -1;
+    st.s = new char[st.size];
+
+    char *postFix;
+    postFix = new char[strlen(inFix)+1];
+
+    int i=0,j=0;
+    while (inFix[i]!='\0')
+    {
+        if(isOperand(inFix[i]))
+        {
+            postFix[j++] = inFix[i++];
+        }
+        else
+        {
+            if(pre(inFix[i])>pre(stackTop(st)))
+            {
+                push(&st,inFix[i++]);
+            }
+            else
+            {
+                postFix[j++] = pop(&st);
+            }
+        }
+    }
+    while (!isEmpty(st))
+    {
+        postFix[j++] = pop(&st);
+    }
+
+    postFix[j]='\0';
+    return postFix;
+
+}
+
+int evalPostFix(char *postFix)
+{
+    struct Stack st;
+    int i=0, x1=0, x2=0, r=0;
+    for (i=0; postFix[i]!='\0'; i++)
+    {
+        if(isOperand(postFix[i]))
+        {
+            push(&st,postFix[i]);
+        }
+        else
+        {
+            if(isEmpty(st))
+            {
+                std::cout << "Invalid Expression" << std::endl;
+                return -1;
+            }
+            x2 = pop(&st)-'0';
+            if(isEmpty(st))
+            {
+                std::cout << "Invalid Expression" << std::endl;
+                return -1;
+            }
+            x1 = pop(&st)-'0';
+            char temp = '\0';
+
+            switch (postFix[i])
+            {
+            case '+':
+                r = x1+x2;
+                temp = '0'+ r;
+                push(&st, temp);
+                break;
+            
+            case '-':
+                r = x1-x2;
+                temp = '0'+ r;
+                push(&st, temp);
+                break;
+            
+            case '*':
+                r = x1*x2;
+                temp = '0'+ r;
+                push(&st, temp);
+                break;
+            
+            case '/':
+                r = x1/x2;
+                temp = '0'+ r;
+                push(&st, temp);
+                break;
+            
+            default:
+                break;
+            }
+
+
+        }
+    }
+
+    return r = pop(&st)-'0';
+}
+
 int main()
 {
     // struct Stack st;
@@ -156,9 +288,15 @@ int main()
     // std::cout << x << std::endl;
 
 
-    char *exp = "((a+b) * (c-d))";
-    bool A = isBalanced(exp);
-    std::cout << A << std::endl;
+    char *exp = "234*+82/-";
+    // bool A = isBalanced(exp);
+    std::cout << exp << std::endl;
+
+    // char * postFix = convert(exp);
+    // std::cout << postFix << std::endl;
+
+    int result = evalPostFix(exp);
+    std::cout << result << std::endl;
 
 
 }
