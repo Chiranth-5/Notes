@@ -270,33 +270,33 @@ int evalPostFix(char *postFix)
     return r = pop(&st)-'0';
 }
 
-int main()
-{
-    // struct Stack st;
+// int main()
+// {
+//     // struct Stack st;
 
-    // create(&st);
+//     // create(&st);
     
-    // push(&st,1);
-    // push(&st,2);
-    // push(&st,3);
-    // push(&st,4);
-    // push(&st,5);
-    // display(st);
+//     // push(&st,1);
+//     // push(&st,2);
+//     // push(&st,3);
+//     // push(&st,4);
+//     // push(&st,5);
+//     // display(st);
 
-    // int x = peek(st,3);
-    // std::cout << std::endl;
-    // std::cout << x << std::endl;
-
-
-    char *exp = "234*+82/-";
-    // bool A = isBalanced(exp);
-    std::cout << exp << std::endl;
-
-    // char * postFix = convert(exp);
-    // std::cout << postFix << std::endl;
-
-    int result = evalPostFix(exp);
-    std::cout << result << std::endl;
+//     // int x = peek(st,3);
+//     // std::cout << std::endl;
+//     // std::cout << x << std::endl;
 
 
-}
+//     char *exp = "234*+82/-";
+//     // bool A = isBalanced(exp);
+//     std::cout << exp << std::endl;
+
+//     // char * postFix = convert(exp);
+//     // std::cout << postFix << std::endl;
+
+//     int result = evalPostFix(exp);
+//     std::cout << result << std::endl;
+
+
+// }
