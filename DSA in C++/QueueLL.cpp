@@ -50,15 +50,16 @@ int dequeue()
     }
     else if(p->next == NULL)
         {
-            x =rear->data;
-            delete rear;
+            x =front->data;
+            delete front;
             front = rear = NULL;
         }
         else
         {   
-            x =rear->data;
-            delete rear;
-            rear = p;
+            x = front->data;
+            delete front;
+            front = NULL;
+            front = p->next;
         }
     
     return x;
