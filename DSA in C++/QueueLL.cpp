@@ -66,15 +66,15 @@ int dequeue()
 
 }
 
-int main()
-{
-    enqueue(1);
-    enqueue(2);
-    enqueue(3);
-    display(front);
-    int x = dequeue();
-    std::cout<<std::endl;
-    std::cout << x << std::endl;
-    std::cout<<std::endl;
-    display(front);
-}
+// int main()
+// {
+//     enqueue(1);
+//     enqueue(2);
+//     enqueue(3);
+//     display(front);
+//     int x = dequeue();
+//     std::cout<<std::endl;
+//     std::cout << x << std::endl;
+//     std::cout<<std::endl;
+//     display(front);
+// }
