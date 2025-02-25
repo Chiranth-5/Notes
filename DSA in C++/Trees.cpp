@@ -114,3 +114,69 @@ Later start traversing along the boundary and write the nodes which are being cu
 
 
 */
+#include<iostream>
+
+struct Node
+{
+    Node *lchild;
+    int data;
+    Node *rchild;
+};
+
+struct Queue
+{
+    int size;
+    int front;
+    int rear;
+    Node **Q;// pointer to collection of pointers.
+    
+};
+
+
+void create (struct Queue *q, int size)
+{
+    q->size = size;
+    q->front = 0;
+    q->rear = 0;
+    q->Q = new Node*[q->size];
+
+}
+
+void enqueue (struct Queue *q , Node *x)
+{
+    
+    if( ((q->rear+1) % q->size) == q->front)
+    {
+        std::cout << "Queue is Full" << std::endl;
+        return;
+    }
+    else
+    {
+        q->rear = ((q->rear+1) % q->size);
+        q->Q[q->rear] = x;
+        return;
+    }
+}
+
+Node* dequeue(struct Queue *q)
+{
+    
+    Node *x = NULL;
+    if(q->front == q->rear)
+    {
+        std::cout << "Queue is Empty" << std::endl;
+    }
+    else
+    {
+        q->front = ((q->front+1) % q->size);
+        x= q->Q[q->front];
+        q->Q[q->front] == 0;
+    }
+    return x;
+
+}
+
+int isEmpty(struct Queue q)
+{
+    return q.front == q.rear;
+}
