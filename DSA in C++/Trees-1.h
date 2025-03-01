@@ -114,6 +114,10 @@ Later start traversing along the boundary and write the nodes which are being cu
 
 
 */
+
+#ifndef QUEUE_H
+#define QUEUE_H
+
 #include<iostream>
 
 struct Node
@@ -180,3 +184,5 @@ int isEmpty(struct Queue q)
 {
     return q.front == q.rear;
 }
+
+#endif
