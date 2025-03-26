@@ -38,7 +38,7 @@ Number of nodes with: deg(0) = deg(2) + 1;
 
 
 Strict Binary tree:
-All the nodes in the tree wither has degree 0 or degree 2.
+All the nodes in the tree either has degree 0 or degree 2.
 
 Min Nodes : n = 2h+1
 Max Nodes : n = (2^(h+1)) - 1
@@ -52,7 +52,7 @@ External nodes = e
 e = i+1;
 
 m-ary trees
-Maximum degree of any node is greater than 3.
+Maximum degree of any node is not greater than m.
 
 Min Nodes : n = mh+1
 Max Nodes : n = ((m^(h+1)) - 1) / (m-1)

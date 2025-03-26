@@ -84,11 +84,12 @@ void postOrder(struct Node *q)
 
 int main()
 {
-    createTree();
-    std::cout << "This is preorder traversal" << std::endl;
-    preOrder(root);
-    std::cout << "This is inorder traversal" << std::endl;
-    inOrder(root);
-    std::cout << "This is postorder traversal" << std::endl;
-    postOrder(root);
+    
+    // createTree();
+    // std::cout << "This is preorder traversal" << std::endl;
+    // preOrder(root);
+    // std::cout << "This is inorder traversal" << std::endl;
+    // inOrder(root);
+    // std::cout << "This is postorder traversal" << std::endl;
+    // postOrder(root);
 }
