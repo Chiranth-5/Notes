@@ -115,8 +115,8 @@ Later start traversing along the boundary and write the nodes which are being cu
 
 */
 
-#ifndef QUEUE_H
-#define QUEUE_H
+#ifndef DS_H
+#define DS_H
 
 #include<iostream>
 
@@ -132,21 +132,27 @@ struct Queue
     int size;
     int front;
     int rear;
-    Node **Q;// pointer to collection of pointers.
+    Node **Q;// pointer to pointer of nodes.
     
 };
 
+struct Stack
+{
+    int size;
+    int top;
+    Node **Q;// pointer to pointer of nodes
+};
 
-void create (struct Queue *q, int size)
+// Fucntions for Queue
+void createQ(struct Queue *q, int size)
 {
     q->size = size;
     q->front = 0;
     q->rear = 0;
     q->Q = new Node*[q->size];
-
 }
 
-void enqueue (struct Queue *q , Node *x)
+void enqueue(struct Queue *q , Node *x)
 {
     
     if( ((q->rear+1) % q->size) == q->front)
@@ -180,9 +186,65 @@ Node* dequeue(struct Queue *q)
 
 }
 
-int isEmpty(struct Queue q)
+int isEmptyQ(struct Queue q)
 {
     return q.front == q.rear;
 }
+
+//Functions on Stack
+void createS(struct Stack *s, int size)
+{
+    s->size = size;
+    s->top = -1;
+    s->Q = new Node*[s->size];
+}
+
+void pushS(struct Stack *s , Node *x)
+{
+    
+    if( ((s->top+1)  == s->size))
+    {
+        std::cout << "Stack Overflow" << std::endl;
+        return;
+    }
+    else
+    {
+        s->top = (s->top+1);
+        s->Q[s->top] = x;
+        return;
+    }
+}
+
+Node* popS(struct Stack *s)
+{
+    
+    Node *x = NULL;
+    if(s->top == -1)
+    {
+        std::cout << "Stack UnderFlow" << std::endl;
+    }
+    else
+    {
+        x = s->Q[s->top];
+        s->Q[s->top] == 0;
+        s->top = (s->top-1);
+    }
+    return x;
+
+}
+
+int isEmptyS(struct Stack s)
+{
+    if (s.top == -1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+
 
 #endif
