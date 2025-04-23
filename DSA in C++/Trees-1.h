@@ -88,7 +88,7 @@ Number of Nodes + 1 = Number of NUlls
 
 Full vs Complete Binary Tree
 
-1. FUll Bunary tree: Binary tree with hieght h having maximum number of nodes.
+1. FUll Bunary tree: Binary tree wwith hieght h having maximum number of nodes.(All nodes have either 0 or 2 degrees)
  n = (2^(h+1)) - 1
 
 2. Complete Binary Tree: Binary tree when replresented in Array has no blank space between the elements.
