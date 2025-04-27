@@ -1,40 +1,40 @@
-#ifndef MATRIX_H
-#define MATRIX_H
+// #ifndef MATRIX_H
+// #define MATRIX_H
 
-#include <iostream>
+// #include <iostream>
 
-class Diagonal
-{
-    private:
-        int n;
-        int* A;
+// class Diagonal
+// {
+//     private:
+//         int n;
+//         int* A;
     
-    public:
-        Diagonal(int n);
+//     public:
+//         Diagonal(int n);
         
-        void setMatrix(int i, int j, int x);
-        int getMatrix(int i, int j);
+//         void setMatrix(int i, int j, int x);
+//         int getMatrix(int i, int j);
 
-        void display();
+//         void display();
 
-        ~Diagonal();
-};
+//         ~Diagonal();
+// };
 
-class LowerDiagonal
-{
-    private:
-        int n;
-        int* A;
+// class LowerDiagonal
+// {
+//     private:
+//         int n;
+//         int* A;
     
-    public:
-        LowerDiagonal(int n);
+//     public:
+//         LowerDiagonal(int n);
         
-        void setLMatrix(int i, int j, int x);
-        int getLMatrix(int i, int j);
+//         void setLMatrix(int i, int j, int x);
+//         int getLMatrix(int i, int j);
 
-        void display();
+//         void display();
 
-        ~LowerDiagonal();
-};
+//         ~LowerDiagonal();
+// };
 
-#endif
+// #endif
