@@ -1,6 +1,6 @@
 // #include <iostream>
 
-
+// // Selecting the position and finding its element.
 // // intermideiate passes will give usefull result
 // // minimum number of swaps
 // // Not adaptive.(No swap after 1 pass does not mean the array is sorted)
