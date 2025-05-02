@@ -515,125 +515,125 @@
 // }
 
 
-// // int main()
-// // {
-// //     // struct Node *temp;
+// int main()
+// {
+//     // struct Node *temp;
    
 
-// //     // Display(first);
-// //     // std::cout << std::endl;
+//     // Display(first);
+//     // std::cout << std::endl;
 
-// //     // RDisplay(first);
-// //     // std::cout << std::endl;
-// //     // std::cout << first->next << std::endl;
+//     // RDisplay(first);
+//     // std::cout << std::endl;
+//     // std::cout << first->next << std::endl;
 
-// //     // std::cout << "The number of elements in the linked list are " << count(first) << std::endl;
+//     // std::cout << "The number of elements in the linked list are " << count(first) << std::endl;
 
-// //     // std::cout << first->next << std::endl;
+//     // std::cout << first->next << std::endl;
 
-// //     // std::cout << "The sum of elements in the linked list are " << sum(first) << std::endl;
-// //     // std::cout << "The maximum of the given elements in our linked list is " << max(first) << std::endl;
-// //     // std::cout << std::endl;
-// //     // Node* result = search(first,32);
-// //     // std::cout << result->data << std::endl;
-// //     // Node* result = impSearch(first,32);
-// //     // std::cout << result->data << std::endl;
-// //     // std::cout << std::endl;
+//     // std::cout << "The sum of elements in the linked list are " << sum(first) << std::endl;
+//     // std::cout << "The maximum of the given elements in our linked list is " << max(first) << std::endl;
+//     // std::cout << std::endl;
+//     // Node* result = search(first,32);
+//     // std::cout << result->data << std::endl;
+//     // Node* result = impSearch(first,32);
+//     // std::cout << result->data << std::endl;
+//     // std::cout << std::endl;
 
-// //     // Display(first);
-// //     // std::cout << std::endl;
-// //     // insert(3,26);
-// //     // std::cout << std::endl;
-// //     // Display(first);
-
-
-// //     // Display(first);
-// //     // std::cout << std::endl;
-// //     // insertInSortedLL(26);
-// //     // std::cout << std::endl;
-// //     // Display(first);
-
-// //     // Display(first);
-// //     // std::cout << std::endl;
-// //     // std::cout << deletee(88)<< std::endl;
-// //     // std::cout << std::endl;
-// //     // Display(first);
-
-// //     // checkSorted(first);
-// //     // Display(first);
-// //     // std::cout << std::endl;
-
-// //     // removeDupicatesInSorted(first);
-// //     // Display(first);
-// //     // std::cout << std::endl;
-
-// //     // reversingLLElements(first);
-// //     // Display(first);
-// //     // std::cout << std::endl;
-
-// //     // reversingLLLinks(first);
-// //     // Display(first);
-// //     // std::cout << std::endl;
-
-// //     int A[] = {3, 5, 6, 8, 10};
-// //     int B[] = {2, 4, 5, 8, 11, 18};
-// //     createF(A, 5);
-// //     // createS(B, 6);
-
-// //     // struct Node *temp;
-
-// //     // Display(first);
-// //     // std::cout << std::endl;
-// //     // Display(second);
-// //     // std::cout << std::endl;
-
-// //     // temp = concatinating2LL(first,second);
-// //     // Display(temp);
-// //     // std::cout << std::endl;
-
-// //     // temp = merge2LL(first,second);
-// //     // Display(temp);
-// //     // std::cout << std::endl;
-
-// //     // t1 = first->next->next;
-// //     // temp = first->next->next->next->next;
-
-// //     // temp->next = first;
-
-// //     // int a = isLoop(first);
-// //     // std::cout << " Loop will have return value as 0 ,if its not a loop it will have return value as 1 : " << a << std::endl;
-
-// //     // cDisplay(first);
-// //     // std::cout << std::endl;
-// //     // rCDisplay(first);
-// //     // std::cout << std::endl;
-
-// //     // insertCLL(first, 0, 1);
-// //     // cDisplay(first);
-// //     // std::cout << std::endl;
-
-// //     // insertCLL(first, 4, 7);
-// //     // cDisplay(first);
-// //     // std::cout << std::endl;
-
-// //     // int b = cDeletee(2);
-// //     // std::cout << b << std::endl;
-// //     // std::cout << std::endl;
-
-// //     // a = isLoop(first);
-// //     // std::cout << " Loop will have return value as 0 ,if its not a loop it will have return value as 1 : " << a << std::endl;
-
-// //     // cDisplay(first);
-// //     // // std::cout << std::endl;
-
-// //     Display(first);
-// //     std::cout << std::endl;
-
-// //     findMiddle(first);
+//     // Display(first);
+//     // std::cout << std::endl;
+//     // insert(3,26);
+//     // std::cout << std::endl;
+//     // Display(first);
 
 
-// //     return 0;
+//     // Display(first);
+//     // std::cout << std::endl;
+//     // insertInSortedLL(26);
+//     // std::cout << std::endl;
+//     // Display(first);
 
-// // } 
+//     // Display(first);
+//     // std::cout << std::endl;
+//     // std::cout << deletee(88)<< std::endl;
+//     // std::cout << std::endl;
+//     // Display(first);
+
+//     // checkSorted(first);
+//     // Display(first);
+//     // std::cout << std::endl;
+
+//     // removeDupicatesInSorted(first);
+//     // Display(first);
+//     // std::cout << std::endl;
+
+//     // reversingLLElements(first);
+//     // Display(first);
+//     // std::cout << std::endl;
+
+//     // reversingLLLinks(first);
+//     // Display(first);
+//     // std::cout << std::endl;
+
+//     int A[] = {3, 5, 6, 8, 10};
+//     int B[] = {2, 4, 5, 8, 11, 18};
+//     createF(A, 5);
+//     // createS(B, 6);
+
+//     // struct Node *temp;
+
+//     // Display(first);
+//     // std::cout << std::endl;
+//     // Display(second);
+//     // std::cout << std::endl;
+
+//     // temp = concatinating2LL(first,second);
+//     // Display(temp);
+//     // std::cout << std::endl;
+
+//     // temp = merge2LL(first,second);
+//     // Display(temp);
+//     // std::cout << std::endl;
+
+//     // t1 = first->next->next;
+//     // temp = first->next->next->next->next;
+
+//     // temp->next = first;
+
+//     // int a = isLoop(first);
+//     // std::cout << " Loop will have return value as 0 ,if its not a loop it will have return value as 1 : " << a << std::endl;
+
+//     // cDisplay(first);
+//     // std::cout << std::endl;
+//     // rCDisplay(first);
+//     // std::cout << std::endl;
+
+//     // insertCLL(first, 0, 1);
+//     // cDisplay(first);
+//     // std::cout << std::endl;
+
+//     // insertCLL(first, 4, 7);
+//     // cDisplay(first);
+//     // std::cout << std::endl;
+
+//     // int b = cDeletee(2);
+//     // std::cout << b << std::endl;
+//     // std::cout << std::endl;
+
+//     // a = isLoop(first);
+//     // std::cout << " Loop will have return value as 0 ,if its not a loop it will have return value as 1 : " << a << std::endl;
+
+//     // cDisplay(first);
+//     // // std::cout << std::endl;
+
+//     Display(first);
+//     std::cout << std::endl;
+
+//     findMiddle(first);
+
+
+//     return 0;
+
+// } 
 
 // #endif
