@@ -21,7 +21,7 @@
 // //     std::cout << "Enter the size of the stack" << std::endl;
 // //     std::cin >> st->size;
 // //     st->top = -1;
-// //     st->s = new [st->size];
+// //     st->s = new char[st->size];
 // // }
 
 // void display(struct Stack st)

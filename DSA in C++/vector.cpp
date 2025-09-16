@@ -19,5 +19,23 @@
 //     //2. Size of the vector( ie total number of values occupied in the vector).
 //     //3. Capacity of the vector (ie total continous memory allocated for the vector)
 
-//     sample.size();
+//     std::cout<<sample.size() <<std::endl;
+//     std::cout << *sample.begin()<<std::endl;
+//     std::cout << sample.capacity()<<std::endl;
+
+//     std::cout << std::endl;
+//     sample.push_back(20);
+//     sample.insert(sample.begin(),5);
+
+//     for( auto val : sample)
+//     {
+//         std::cout  << val << std::endl;
+//     }
+
+//     // auto &&range = sample;
+//     // for (auto it = range.begin(); it != range.end(); ++it) 
+//     // {
+//     //     auto val = *it;   // copy each element into val
+//     //     std::cout << val << std::endl;
+//     // }
 // }
