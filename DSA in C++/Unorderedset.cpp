@@ -27,11 +27,11 @@
 //     // Worst-case: O(n) if rehashing occurs
 //     setDemo.insert(10);
 //     setDemo.insert(5);
-//     setDemo.insert(20);
-//     setDemo.insert(10);  // duplicate, ignored
-//     setDemo.insert(100);
-//     setDemo.insert(50);
-//     setDemo.insert(200);
+//     int a = 30;
+//     setDemo.insert(a);
+//     a=35;
+//     setDemo.insert(a);
+
 
 //     cout << "Elements in unordered_set: " << endl;
 //     for (unordered_set<int>::iterator it = setDemo.begin(); it != setDemo.end(); it++)

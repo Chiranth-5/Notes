@@ -33,6 +33,11 @@ int main()
     demoMap[100] = "Hundred";           // alternative insertion
     demoMap[50] = "Fifty";
     demoMap[200] = "Two Hundred";
+    demoMap[105].append("One hundred fify");
+
+        // Key 105 does not exist yet.
+        // demoMap[105] creates a new entry with default value "" (empty string).
+        // .append("One hundred fifty") concatenates the string to the empty string.
 
     cout << "Elements in unordered_map: " << endl;
     displayUnorderedMap(demoMap);
