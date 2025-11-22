@@ -102,34 +102,37 @@
 // }
 
 
-// // Itereative Postorder
+// //Itereative Postorder
 
-// // void PostOrderI(Node *t)
-// // {
-// //     struct Stack st;
+// void PostOrderI(Node *t)
+// {
+//     struct Stack st;
 
-// //     createS(&st, 10);
-// //     while ( t != nullptr  ||  st.top != -1)
-// //     {
-// //         if (t)
-// //         {
-// //             pushS(&st,t);
-// //             t = t->lchild;
-// //         }
-// //         else
-// //         {
-// //             t = popS(&st);
-// //             //pass negative value of the address.
-// //             if( t > 0)
-// //             {
-// //                 pushS(&st , -t);
+//     createS(&st, 10);
+//     while ( t != nullptr  ||  st.top != -1)
+//     {
+//         if (t)
+//         {
+//             pushS(&st,t);
+//             t = t->lchild;
+//         }
+//         else
+//         {
+//             t = popS(&st);
+//             //pass negative value of the address.
+//             if( t > 0)
+//             {
+//                 pushS(&st , -t);
+//                 t = t->rchild;
 
-// //             }
-// //             cout << t->data << endl;
-// //             t = t->rchild;
-// //         }
-// //     }
-// // }
+//             }
+//             else
+//             {
+//                 cout << t->data << endl;;
+//             }
+//         }
+//     }
+// }
 
 // int main()
 // {
